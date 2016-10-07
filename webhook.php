@@ -62,7 +62,7 @@ $bot = new FbBotApp(mbot_woocommerce_token);
                         }
                         
                         //send text message to messenger
-                        $bot->send( new Message( $message['sender']['id'], 'Danke für Ihre Bestellung, sie werden ab sofort über den Bestellstatus per Chat informiert. ' ) );
+                        $bot->send( new Message( $message['sender']['id'], 'Thank you for your order. We\'ll let you know when it\'s on the way.' ) );
                         //send Order notification to messenger
                         $bot->send(new WooOrderMessage( $message['sender']['id'], $order ) );
 
